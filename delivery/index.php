@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
 
    if($select_agent->rowCount() > 0){
       $_SESSION['delivery_agent_id'] = $row['id'];
-      header('location:delivery.php');
+      header('location:dashboard.php');
    }else{
       $message[] = 'incorrect phone number or password!';
    }
